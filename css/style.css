@@ -1,0 +1,150 @@
+/* 
+$color-blue: #0065fc;
+$color-lightBlue: #deebff;
+$color-grey: #f2f2f2; */
+
+/* reset des marges  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'raleway', sans-serif;
+  min-width: 350px;
+}
+/* mise en forme liens + listes */
+a,
+ul,
+li {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+header img {
+  width: 100px;
+}
+
+header a {
+  padding-top: 7px;
+  /* color: #0065fc; */
+  font-weight: bold;
+}
+header a:hover {
+  color: #0065fc;
+}
+
+/* navigation */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  width: 50%;
+  height: 32px;
+  list-style-type: none;
+  text-align: center;
+}
+/* Changement des liensau survol */
+nav li a:hover {
+  color: #0065fc;
+}
+nav li:hover {
+  border-bottom: solid #0065fc 3px;
+  color: #0065fc;
+}
+nav a {
+  color: inherit;
+}
+
+/* champ de recherche  texte + boutton */
+form {
+  display: flex;
+  height: 50px;
+  max-width: 420px;
+  border: #f2f2f2 solid 1px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+/* Label icone localisation */
+form i.fa-location-dot {
+  width: 50px;
+  padding-top: 25px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+/* ----------------- */
+
+input {
+  padding-left: 10px;
+  font-weight: bold;
+  border: none;
+  flex-grow: 1;
+}
+/* Button switch selon la taille de l'écran */
+button.phone-only {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  border-radius: 15px;
+}
+button.tablet-desktop {
+  display: none;
+  width: 130px;
+  font-weight: bold;
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  flex-shrink: 0;
+}
+/* ----------------- */
+
+section.recherches {
+  padding: 20px;
+}
+section.recherches p {
+  margin-bottom: 30px;
+}
+
+h1 {
+  /* margin-bottom: 15px; */
+}
+
+/* breakpoint button tablette + desktop */
+@media screen and (min-width: 768px) {
+  form {
+    width: 420px;
+  }
+  button.phone-only {
+    display: none;
+  }
+  button.tablet-desktop {
+    display: block;
+  }
+}
+
+.btn-filtre {
+  height: 50px;
+}
+.fa-money-bill-wave {
+  height: 50px;
+  width: 50px;
+  padding-top: 20px;
+  border-radius: 50%;
+  background-color: #deebff;
+  /* #0065fc; */
+}
