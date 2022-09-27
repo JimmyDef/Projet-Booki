@@ -133,6 +133,17 @@ button.tablet-desktop {
   background-color: white;
   font-weight: bold;
 }
+.filtres button:hover {
+  background-color: #deebff;
+  border: #deebff solid;
+  border-left: none;
+  -webkit-box-shadow: 1px 1px 2px 1px #000000;
+  box-shadow: 1px 1px 2px 1px #000000;
+}
+.filtres button:hover > i {
+  color: #deebff;
+  background-color: #0065fc;
+}
 
 .filtres h2 {
   margin: 0 30px 15px 0;
