@@ -7,32 +7,33 @@
     <!-- Importation police google-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!-- Librairie d'icone Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/6fecdd9ab9.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Association feuilles de style et de 'reset'  -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Reservia</title>
+    <title>Booki</title>
   </head>
   <body>
     <!-- header + lien -->
     <header>
-      <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
-      <a href="#">S'inscrire</a>
+      <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+      <nav>
+        <ul>
+          <li><a href="#hebergement">Hébergements</a></li>
+          <li><a href="#activites">Activitées</a></li>
+        </ul>
+      </nav>
     </header>
-    <!-- navigation -->
-    <nav>
-      <ul>
-        <li><a href="#hebergement">Hébergements</a></li>
-        <li><a href="#activites">Activitées</a></li>
-      </ul>
-    </nav>
+
     <main>
-      <!-- section recherche + filtres -->
       <section class="recherches">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -40,7 +41,7 @@
         <form action="" method="post">
           <i class="fa-solid fa-location-dot fa-lg"></i>
           <input type="text" value="Marseille, France" maxlength="20" />
-
+          <!-- bouttons désactivés + display breakpoint -->
           <button class="phone-only" disabled="disabled" type="submit">
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
           </button>
@@ -48,7 +49,8 @@
             Recherche
           </button>
         </form>
-
+      </section>
+      <section class="filtres">
         <h2>Filtres</h2>
         <button class="btn-filtre">
           <i class="fa-solid fa-money-bill-wave"></i>Économique

@@ -13,70 +13,65 @@ $color-grey: #f2f2f2; */
 }
 
 body {
+  margin: auto;
   box-sizing: border-box;
   font-family: 'raleway', sans-serif;
   min-width: 350px;
-}
-/* mise en forme liens + listes */
-a,
-ul,
-li {
-  text-decoration: none;
+  max-width: 1375px;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 30px 20px;
+  margin: 0px 50px 20px;
 }
 
 header img {
-  width: 100px;
+  width: 110px;
+  padding-top: 50px;
 }
 
-header a {
-  padding-top: 7px;
-  /* color: #0065fc; */
-  font-weight: bold;
+nav {
+  width: 33%;
 }
-header a:hover {
-  color: #0065fc;
-}
-
-/* navigation */
 
 nav ul {
   display: flex;
-  justify-content: center;
 }
+
 nav li {
   width: 50%;
-  height: 32px;
+  padding-top: 75px;
   list-style-type: none;
   text-align: center;
 }
-/* Changement des liensau survol */
-nav li a:hover {
+
+/* Changement des liens au survol */
+nav ul li:hover {
   color: #0065fc;
+  border-top: #0065fc solid 3px;
 }
-nav li:hover {
-  border-bottom: solid #0065fc 3px;
-  color: #0065fc;
-}
+/* couleur des liens hérités de li:hover */
 nav a {
   color: inherit;
+  text-decoration: none;
 }
 
-/* champ de recherche  texte + boutton */
+/* section recherche + filtre */
+
+section.recherches {
+  padding: 20px;
+}
+section.recherches p {
+  margin-bottom: 30px;
+}
+/* champ de recherche  texte  */
 form {
   display: flex;
   height: 50px;
   max-width: 420px;
   border: #f2f2f2 solid 1px;
   border-radius: 15px;
-  overflow: hidden;
 }
 /* Label icone localisation */
 form i.fa-location-dot {
@@ -84,8 +79,8 @@ form i.fa-location-dot {
   padding-top: 25px;
   background-color: #f2f2f2;
   text-align: center;
+  border-radius: 15px 0 0 15px;
 }
-/* ----------------- */
 
 input {
   padding-left: 10px;
@@ -93,8 +88,15 @@ input {
   border: none;
   flex-grow: 1;
 }
+form button:hover {
+  color: #0065fc;
+  background-color: #deebff;
+  -webkit-box-shadow: 1px 1px 5px 3px #000000;
+  box-shadow: 1px 1px 5px 3px #000000;
+}
 /* Button switch selon la taille de l'écran */
 button.phone-only {
+  display: none;
   width: 50px;
   height: 50px;
   color: white;
@@ -103,44 +105,56 @@ button.phone-only {
   border-radius: 15px;
 }
 button.tablet-desktop {
-  display: none;
   width: 130px;
   font-weight: bold;
   color: white;
   background-color: #0065fc;
   border: none;
+  border-radius: 0 15px 15px 0;
   flex-shrink: 0;
 }
 /* ----------------- */
 
-section.recherches {
-  padding: 20px;
-}
-section.recherches p {
-  margin-bottom: 30px;
-}
-
-h1 {
-  /* margin-bottom: 15px; */
+/* Breakpoint header + navigation */
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav li {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  nav ul li:hover {
+    border-top: none;
+    border-bottom: #0065fc solid 3px;
+  }
 }
 
 /* breakpoint button tablette + desktop */
-@media screen and (min-width: 768px) {
-  form {
-    width: 420px;
-  }
+@media screen and (max-width: 500px) {
   button.phone-only {
-    display: none;
+    display: block;
   }
   button.tablet-desktop {
-    display: block;
+    display: none;
   }
 }
 
+section.filtres {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .btn-filtre {
+  position: relative;
   height: 50px;
 }
-.fa-money-bill-wave {
+i .fa-money-bill-wave {
   height: 50px;
   width: 50px;
   padding-top: 20px;
