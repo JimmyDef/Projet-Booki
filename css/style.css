@@ -15,7 +15,11 @@ body {
   min-width: 350px;
   max-width: 1440px;
 }
-
+a {
+  text-decoration: none;
+  color: #000000;
+}
+/* ------ Header et naviagation ------  */
 header {
   display: flex;
   justify-content: space-between;
@@ -52,8 +56,9 @@ nav a {
   color: inherit;
   text-decoration: none;
 }
+/* ------  ------  */
 
-/* section recherche + filtre */
+/* ------ section recherche + formulaire ------*/
 
 section {
   padding: 20px;
@@ -95,7 +100,7 @@ form button:hover {
   box-shadow: 1px 1px 2px 1px #000000;
 }
 /* Button switch selon la taille de l'écran */
-button.phone-only {
+button.smartphone {
   display: none;
   width: 50px;
   height: 50px;
@@ -104,7 +109,7 @@ button.phone-only {
   color: white;
   background-color: #0065fc;
 }
-button.tablet-desktop {
+button.tablette-bureau {
   width: 130px;
   border: none;
   border-radius: 0 15px 15px 0;
@@ -113,8 +118,9 @@ button.tablet-desktop {
   background-color: #0065fc;
   flex-shrink: 0;
 }
+/* ------  ------  */
 
-/* section des filtres */
+/* ------ section des filtres------ */
 
 .filtres {
   display: flex;
@@ -140,6 +146,8 @@ button.tablet-desktop {
   -webkit-box-shadow: 1px 1px 2px 1px #000000;
   box-shadow: 1px 1px 2px 1px #000000;
 }
+
+/* le survol affecte aussi l'icone  */
 .filtres button:hover > i {
   color: #deebff;
   background-color: #0065fc;
@@ -165,6 +173,16 @@ button.tablet-desktop {
   margin-right: 10px;
   color: #0065fc;
 }
+/* création icone + cercle :  indisponible sur font-awesome */
+i.cercle {
+  height: 25px;
+  width: 25px;
+  padding-top: 11px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+/* ------  ------ */
 
 /* Breakpoint header + navigation */
 @media screen and (max-width: 768px) {
@@ -187,10 +205,10 @@ button.tablet-desktop {
 
 /* breakpoint button tablette + desktop */
 @media screen and (max-width: 500px) {
-  button.phone-only {
+  button.smartphone {
     display: block;
   }
-  button.tablet-desktop {
+  button.tablette-bureau {
     display: none;
   }
 }
@@ -200,4 +218,93 @@ button.tablet-desktop {
   section.filtres h2 {
     width: 100%;
   }
+}
+section.conteneur-hebergement-populaire {
+  display: flex;
+}
+
+article {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+aside {
+  width: 30%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+#hebergement h2,
+#hebergement p {
+  width: 100%;
+}
+.carte-hebergement {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  object-fit: cover;
+  overflow: hidden;
+}
+.carte-populaire {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.carte-hebergement img {
+  width: 100%;
+  height: 130px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.carte-populaire img {
+  width: 150px;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.carte-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+.carte-info--hebergement {
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-size: 14px;
+}
+/* .carte-info--populaire {
+  right: 0px;
+  width: 150px;
+  height: 100%;
+  /* padding: 10px; */
+  font-size: 14px;
+} */
+
+h3 {
+  font-size: 16px;
+}
+
+/* couleur des étoiles de notation */
+.carte-note i {
+  color: #0065fc;
+}
+i.grey {
+  color: grey;
 }

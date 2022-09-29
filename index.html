@@ -38,6 +38,7 @@
     </header>
 
     <main>
+      <!-- Section recherches -->
       <section class="recherches">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -46,10 +47,10 @@
           <i class="fa-solid fa-location-dot fa-lg"></i>
           <input type="text" placeholder="Marseille, France" maxlength="20" />
           <!-- bouttons désactivés + display breakpoint -->
-          <button class="phone-only" disabled="disabled" type="submit">
+          <button class="smartphone" disabled="disabled" type="submit">
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
           </button>
-          <button class="tablet-desktop" disabled="disabled" type="submit">
+          <button class="tablette-bureau" disabled="disabled" type="submit">
             Recherche
           </button>
         </form>
@@ -70,21 +71,282 @@
           <i class="fa-solid fa-dog fa-lg"></i>Animaux autorisés
         </button>
         <p>
-          <i class="fa-solid fa-circle-info fa-lg"></i>Plus de 500 logements
+          <i class="fa-solid fa-info cercle fa-sm"></i>Plus de 500 logements
           sont disponibles dans cette ville
         </p>
       </section>
+      <section class="conteneur-hebergement-populaire">
+        <!-- Partie Hébergement Marseilles -->
+        <article id="hebergement">
+          <h2>Hébergements à Marseille</h2>
 
-      <section>
-        <h2>Les plus populaires</h2>
-        <i class="fa-solid fa-chart-line"></i>
+          <!-- Auberge La Cannebière -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Photo de Auberge de la Cannebière"
+              />
+
+              <div class="carte-info carte-info--hebergement">
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de <b>25€</b></p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hôtel du port -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Photo de Hotêl du port"
+              />
+              <div class="carte-info carte-info--hebergement">
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de 52€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hotêl Les Mouettes -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt="Photo de Hotêl Les Mouettes"
+              />
+              <div class="carte-info carte-info--hebergement">
+                <h3>Hotêl Les Mouettes</h3>
+                <p>Nuit à partir de 76€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hotêl de la mer -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt="Photo de Hotêl de la mer"
+              />
+              <div class="carte-info carte-info--hebergement">
+                <h3>Hotêl de la mer</h3>
+                <p>Nuit à partir de 46€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Auberge Le Panier -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                alt="Photo de Auberge Le Panier"
+              />
+              <div class="carte-info carte-info--hebergement">
+                <h3>Auberge Le Panier</h3>
+                <p>Nuit à partir de <b>23€</b></p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hotêl chez Amina -->
+          <div class="carte-hebergement">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                alt="Photo de Hotêl chez Amina"
+              />
+              <div class="carte-info carte-info--hebergement">
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partir de 96€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <p><a href="#"> Afficher plus</a></p>
+        </article>
+
+        <!-- Partie Les plus populaire  -->
+        <aside>
+          <h2>Les plus populaires</h2>
+          <i class="fa-solid fa-chart-line"></i>
+          <!-- Hotêl Le soleil du matin -->
+          <div class="carte-populaire">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Photo de Hotêl Le soleil du matin"
+              />
+              <div class="carte-info carte-info--populaire">
+                <h3>Hotêl Le soleil du matin</h3>
+                <p>Nuit à partir de 128€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Au coeur de l'eau Chambres d'hôtes -->
+          <div class="carte-populaire">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Photo de Au coeur de l'eau Chambres d'hôtes"
+              />
+              <div class="carte-info carte-info--populaire">
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <p>Nuit à partir de 71€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hotêl Tout bleu et Blanc -->
+          <div class="carte-populaire">
+            <a href="#">
+              <img
+                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Photo de Hotêl Tout bleu et Blanc"
+              />
+              <div class="carte-info carte-info--populaire">
+                <h3>Hotêl Tout bleu et Blanc</h3>
+                <p>Nuit à partir de 68€</p>
+                <div class="carte-note">
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
       </section>
-      <section>
-        <h2 id="hebergement">Hébergements à Marseille</h2>
-      </section>
-      <section>
-        <h2 id="activites">Activités à Marseille</h2>
-      </section>
+      <!-- Partie activités -->
+
+      <article id="activites">
+        <h2>Activités à Marseille</h2>
+        <!-- Vieux Port -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              alt="Photo de Vieux Port"
+            />
+            <div class="carte-info">
+              <h3>Vieux Port</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Fort de Pomègues -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              alt="Photo de Fort de Pomègues"
+            />
+            <div class="carte-info">
+              <h3>Fort de Pomègues</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Île du Frioul -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              alt="Photo de île du Frioul"
+            />
+            <div class="carte-info">
+              <h3>Île du Frioul</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Parc National des Calanques -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt="Photo de Parc National des Calanques"
+            />
+            <div class="carte-info">
+              <h3>Parc National des Calanques</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Notre-Dame-de-la-Garde -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              alt="Photo de Notre-Dame-de-la-Garde"
+            />
+            <div class="carte-info">
+              <h3>Notre-Dame-de-la-Garde</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Parc Longchamp -->
+        <div class="carte">
+          <a href="#">
+            <img
+              src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              alt="Photo de Parc Longchamp"
+            />
+            <div class="carte-info">
+              <h3>Parc Longchamp</h3>
+            </div>
+          </a>
+        </div>
+      </article>
     </main>
     <footer>
       <h3>A propos</h3>
@@ -98,7 +360,5 @@
       <p>Centre d'aide</p>
       <p>Nous contacter</p>
     </footer>
-
-    <i class="fa-solid fa-star grey"></i>
   </body>
 </html>
