@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: #000000;
 }
+h3 {
+  font-size: 16px;
+}
 /* ------ Header et naviagation ------  */
 header.principal {
   display: flex;
@@ -224,6 +227,7 @@ section.conteneur-hebergement-populaire {
   justify-content: space-between;
 }
 
+/* Partie diaporamma vignette */
 article {
   width: 65%;
   display: flex;
@@ -234,19 +238,21 @@ article {
 }
 
 aside {
-  width: 30%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   background-color: #f2f2f2;
   border-radius: 20px;
 }
 
-#hebergement h2,
+#hebergement h2 {
+  width: 100%;
+  margin: 40px 30px 20px;
+}
 .afficher-plus {
   width: 100%;
-  margin: 40px 20px;
+  margin: 0px 30px 30px;
 }
 span {
   font-weight: 800;
@@ -285,15 +291,15 @@ span {
 /* Cartes Populaire */
 header.secondaire {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
-  margin: 40px 20px 20px;
+  margin: 40px 30px 0px;
 }
 .carte-populaire {
   position: relative;
-  align-items: center;
-  width: 345px;
+  width: 90%;
   height: 130px;
+  margin: auto;
   padding: 5px;
   border-radius: 20px;
   background-color: white;
@@ -330,10 +336,6 @@ header.secondaire {
 }
 
 /* ------ ------  */
-
-h3 {
-  font-size: 16px;
-}
 
 /* couleur des étoiles de notation */
 .carte-note i {
