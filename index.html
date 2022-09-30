@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- header + lien -->
-    <header>
+    <header class="principal">
       <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
       <nav>
         <ul>
@@ -75,6 +75,8 @@
           sont disponibles dans cette ville
         </p>
       </section>
+
+      <!-- grande Section qui contient hebergement (article) + populaire (aside)-->
       <section class="conteneur-hebergement-populaire">
         <!-- Partie Hébergement Marseilles -->
         <article id="hebergement">
@@ -87,10 +89,9 @@
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Photo de Auberge de la Cannebière"
               />
-
               <div class="carte-info carte-info--hebergement">
                 <h3>Auberge la Cannebière</h3>
-                <p>Nuit à partir de <b>25€</b></p>
+                <p>Nuit à partir de <span>25€</span></p>
                 <div class="carte-note">
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
@@ -170,7 +171,7 @@
               />
               <div class="carte-info carte-info--hebergement">
                 <h3>Auberge Le Panier</h3>
-                <p>Nuit à partir de <b>23€</b></p>
+                <p>Nuit à partir de <span>23€</span></p>
                 <div class="carte-note">
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
@@ -201,13 +202,17 @@
               </div>
             </a>
           </div>
-          <p><a href="#"> Afficher plus</a></p>
+          <p class="afficher-plus">
+            <a href="#"><span>Afficher plus</span> </a>
+          </p>
         </article>
 
         <!-- Partie Les plus populaire  -->
         <aside>
-          <h2>Les plus populaires</h2>
-          <i class="fa-solid fa-chart-line"></i>
+          <header class="secondaire">
+            <h2>Les plus populaires</h2>
+            <i class="fa-solid fa-chart-line fa-xl"></i>
+          </header>
           <!-- Hotêl Le soleil du matin -->
           <div class="carte-populaire">
             <a href="#">
@@ -223,20 +228,22 @@
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
                   <i class="fa-solid fa-star fa-xs"></i>
-                  <i class="fa-solid fa-star fa-xs"></i>
+                  <i class="fa-solid fa-star fa-xs grey"></i>
                 </div>
               </div>
             </a>
           </div>
-          <!-- Au coeur de l'eau Chambres d'hôtes -->
+
+          <!-- Au cœur de l'eau Chambre d'hotes -->
           <div class="carte-populaire">
             <a href="#">
               <img
                 src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                alt="Photo de Au coeur de l'eau Chambres d'hôtes"
+                alt="Au cœur de l'eau Chambre d'hotes"
               />
               <div class="carte-info carte-info--populaire">
-                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <h3>Au cœur de l'eau Chambre d'hotes</h3>
+
                 <p>Nuit à partir de 71€</p>
                 <div class="carte-note">
                   <i class="fa-solid fa-star fa-xs"></i>
@@ -253,7 +260,7 @@
             <a href="#">
               <img
                 src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                alt="Photo de Hotêl Tout bleu et Blanc"
+                alt=""
               />
               <div class="carte-info carte-info--populaire">
                 <h3>Hotêl Tout bleu et Blanc</h3>
@@ -270,8 +277,8 @@
           </div>
         </aside>
       </section>
-      <!-- Partie activités -->
 
+      <!-- Partie activités -->
       <article id="activites">
         <h2>Activités à Marseille</h2>
         <!-- Vieux Port -->
