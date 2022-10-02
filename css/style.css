@@ -50,7 +50,7 @@ header.principal {
 
 header.principal img {
   width: 110px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 nav {
@@ -63,7 +63,7 @@ nav ul {
 
 nav li {
   width: 50%;
-  padding-top: 75px;
+  padding-top: 55px;
   list-style-type: none;
   text-align: center;
 }
@@ -84,7 +84,7 @@ nav a {
 /* ------ section recherche + formulaire ------*/
 
 section {
-  margin: 0px 20px;
+  margin: 25px 20px;
 }
 
 .recherches p {
@@ -211,7 +211,7 @@ i.cercle {
 }
 /* ------  ------ */
 
-/* Partie  vignettes  */
+/* ----- Partie  VIGNETTES  ------- */
 
 section.conteneur-hebergement-populaire {
   display: flex;
@@ -236,7 +236,8 @@ aside {
   border-radius: 20px;
 }
 
-#hebergement h2 {
+#hebergement h2,
+#activites h2 {
   width: 100%;
   margin: 40px 30px 20px;
 }
@@ -245,23 +246,29 @@ aside {
   margin: 0px 30px 30px;
 }
 
-/* Cartes Hébergement ET populaire */
+/* Partie héberegement + populaire + activité  */
 .carte-hebergement,
-.carte-populaire {
-  padding: 5px;
+.carte-populaire,
+.carte-activites {
   border-radius: 20px;
   box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
-  object-fit: cover;
+}
+.carte-hebergement:hover,
+.carte-populaire:hover,
+.carte-activites:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #000000;
+  box-shadow: 1px 1px 2px 1px #000000;
 }
 
-/* Cartes Hébergement  */
+/* Cartes Hébergement  ------*/
 .carte-hebergement {
   width: 30%;
   height: 200px;
   margin-bottom: 30px;
+  padding: 5px;
 }
 
 .carte-hebergement img {
@@ -278,9 +285,8 @@ aside {
   padding: 0 10px 5px;
   font-size: 14px;
 }
-/* ------ ------  */
 
-/* Cartes Populaire */
+/* Cartes Populaire  ------*/
 header.populaire {
   display: flex;
   justify-content: space-between;
@@ -318,14 +324,67 @@ header.populaire {
   bottom: 3px;
 }
 
-.carte-hebergement:hover,
-.carte-populaire:hover {
-  -webkit-box-shadow: 1px 1px 2px 1px #000000;
-  box-shadow: 1px 1px 2px 1px #000000;
+/*   Cartes activité ------ */
+#activites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-/* ------ ------  */
+#activites h2 {
+  width: 100%;
+}
+#activites h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  background-color: white;
+}
 
-/* -----  Partie ACTIVITES ----- */
+.carte-activites {
+  position: relative;
+  overflow: hidden;
+}
+.duo-vignette {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+}
+.carte-vieux-port,
+.carte-calanques {
+  width: 23%;
+  height: 440px;
+}
+
+.carte-pomegues {
+  height: 230px;
+}
+.carte-frioul {
+  height: 150px;
+}
+
+.carte-notre-dame {
+  height: 190px;
+}
+.carte-longchamp {
+  height: 210px;
+}
+.carte-activites img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.carte-vieux-port,
+.carte-calanques {
+  height: 430px;
+}
 
 /* breakpoint tablette  */
 @media screen and (max-width: 998px) {
@@ -359,59 +418,89 @@ header.populaire {
     height: 130px;
     margin-bottom: 30px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  /* Breakpoint header + navigation */
-  header.principal {
-    margin: 0;
-    align-items: center;
-    flex-direction: column;
+  .carte-activites {
+    width: 30%;
+    height: 200px;
+    margin-bottom: 20px;
   }
-  nav {
-    width: 100%;
-  }
-  nav li {
-    padding: 30px 0 15px;
-  }
-  nav ul li:hover {
-    border-top: none;
-    border-bottom: #0065fc solid 3px;
-  }
-  /* breakpoint switch button */
-  button.smartphone {
-    display: block;
-  }
-  button.tablette-bureau {
-    display: none;
-  }
-  /* breakpoint conteneur , article, aside */
-  .conteneur-hebergement-populaire {
-    margin: 0;
-  }
-  aside {
-    border-radius: 0;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  article {
-    background-color: white;
-    border-radius: 0;
-  }
-  .carte-hebergement,
-  .carte-populaire {
+
+  .duo-vignette {
     flex-direction: row;
-    width: 90%;
-    margin-bottom: 15px;
-  }
-  .conteneur-populaire__info {
-    padding: 8px 20px;
-  }
-  .conteneur-populaire__info h3 {
-    padding: 3px 0;
+    width: 66%;
   }
 
-  .afficher-plus {
-    margin-top: 20px;
+  .carte-pomegues,
+  .carte-frioul,
+  .carte-notre-dame,
+  .carte-longchamp {
+    width: 47%;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Breakpoint header + navigation */
+    header.principal {
+      margin: 0;
+      align-items: center;
+      flex-direction: column;
+    }
+    nav {
+      width: 100%;
+    }
+    nav li {
+      padding: 30px 0 15px;
+    }
+    nav ul li:hover {
+      border-top: none;
+      border-bottom: #0065fc solid 3px;
+    }
+    /* breakpoint switch button */
+    button.smartphone {
+      display: block;
+    }
+    button.tablette-bureau {
+      display: none;
+    }
+    /* breakpoint conteneur , article, aside */
+    .conteneur-hebergement-populaire {
+      margin: 0;
+    }
+    aside {
+      border-radius: 0;
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+    article {
+      background-color: white;
+      border-radius: 0;
+    }
+    .carte-hebergement,
+    .carte-populaire {
+      flex-direction: row;
+      width: 90%;
+      margin-bottom: 15px;
+    }
+    .conteneur-populaire__info {
+      padding: 8px 20px;
+    }
+    .conteneur-populaire__info h3 {
+      padding: 3px 0;
+    }
+
+    .afficher-plus {
+      margin-top: 20px;
+    }
+
+    #activites {
+      margin-top: 0;
+      flex-direction: column;
+    }
+    .duo-vignette {
+      width: 100%;
+      flex-direction: column;
+    }
+    .carte-activites {
+      width: 100%;
+    }
   }
 }
