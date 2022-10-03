@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+  /* Breakpoint header + navigation */
+  header.principal {
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav li {
+    padding: 30px 0 15px;
+  }
+  nav ul li:hover {
+    border-top: none;
+    border-bottom: #0065fc solid 3px;
+  }
+  /* breakpoint switch button */
+  button.smartphone {
+    display: block;
+  }
+  button.tablette-bureau {
+    display: none;
+  }
+  /* breakpoint conteneur , article, aside */
+  .conteneur-hebergement-populaire {
+    margin: 0;
+  }
+  aside {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  article {
+    background-color: white;
+    border-radius: 0;
+  }
+  .carte-hebergement,
+  .carte-populaire {
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .conteneur-populaire__info {
+    padding: 8px 20px;
+  }
+  .conteneur-populaire__info h3 {
+    padding: 3px 0;
+  }
+
+  .afficher-plus {
+    margin-top: 20px;
+  }
+
+  #activites {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .duo-vignette {
+    width: 100%;
+    flex-direction: column;
+  }
+  .carte-activites {
+    width: 100%;
+  }
+}

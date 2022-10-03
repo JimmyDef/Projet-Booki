@@ -1,0 +1,51 @@
+/* breakpoint tablette  */
+@media screen and (max-width: 992px) {
+  /* breakpoint retour à la ligne section filtres h2 */
+  section.filtres h2 {
+    width: 100%;
+    margin: 10px 0 20px;
+  }
+  /* breakpoint conteneur , article, aside */
+  section.conteneur-hebergement-populaire {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header.populaire {
+    width: 100%;
+  }
+  .carte-populaire {
+    width: 30%;
+    height: 130px;
+    margin-bottom: 30px;
+  }
+
+  .carte-activites {
+    width: 30%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .duo-vignette {
+    flex-direction: row;
+    width: 66%;
+  }
+
+  .carte-pomegues,
+  .carte-frioul,
+  .carte-notre-dame,
+  .carte-longchamp {
+    width: 47%;
+  }
+}
