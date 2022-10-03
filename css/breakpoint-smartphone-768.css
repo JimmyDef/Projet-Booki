@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   /* Breakpoint header + navigation */
-  header.principal {
+  header {
     margin: 0;
     align-items: center;
     flex-direction: column;

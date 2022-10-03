@@ -40,14 +40,21 @@
     </header>
 
     <main>
-      <!-- Section recherches -->
-      <section class="recherches">
+      <!-- Section recherches ET filtre-->
+      <section class="recherche-filtres">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
         <form action="" method="post">
-          <i class="fa-solid fa-location-dot fa-lg pointeur"></i>
-          <input type="text" placeholder="Marseille, France" maxlength="20" />
+          <label for="destination-recherche">
+            <i class="fa-solid fa-location-dot fa-lg pointeur"></i>
+          </label>
+          <input
+            type="text"
+            name="destination-recherche"
+            value="Marseille, France"
+            maxlength="20"
+          />
           <!-- bouttons désactivés + display breakpoint -->
           <button class="smartphone" disabled="disabled" type="submit">
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -56,26 +63,25 @@
             Recherche
           </button>
         </form>
-      </section>
-      <!-- Section Filtres -->
-      <section class="filtres">
-        <h2>Filtres</h2>
-        <button class="btn-filtre">
-          <i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique
-        </button>
-        <button class="btn-filtre">
-          <i class="fa-solid fa-child-reaching fa-lg"></i>Familial
-        </button>
-        <button class="btn-filtre">
-          <i class="fa-sharp fa-solid fa-heart fa-lg"></i>Romantique
-        </button>
-        <button class="btn-filtre">
-          <i class="fa-solid fa-dog fa-lg"></i>Animaux autorisés
-        </button>
-        <p>
-          <i class="fa-solid fa-info cercle fa-sm"></i>Plus de 500 logements
-          sont disponibles dans cette ville
-        </p>
+        <div class="filtres">
+          <h2>Filtres</h2>
+          <button class="btn-filtre">
+            <i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique
+          </button>
+          <button class="btn-filtre">
+            <i class="fa-solid fa-child-reaching fa-lg"></i>Familial
+          </button>
+          <button class="btn-filtre">
+            <i class="fa-sharp fa-solid fa-heart fa-lg"></i>Romantique
+          </button>
+          <button class="btn-filtre">
+            <i class="fa-solid fa-dog fa-lg"></i>Animaux autorisés
+          </button>
+        </div>
+        <div class="icone-paragraphe-info">
+          <i class="fa-solid fa-info cercle fa-sm"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </section>
 
       <!-- grande Section qui contient hebergement (article) + populaire (aside)-->
@@ -204,17 +210,16 @@
               </div>
             </a>
           </div>
-          <p class="afficher-plus">
-            <a href="#">Afficher plus </a>
-          </p>
+
+          <a href="#" class="afficher-plus">Afficher plus </a>
         </article>
 
         <!-- Partie Les plus populaire  -->
         <aside>
-          <header class="populaire">
+          <div class="titre-populaire">
             <h2>Les plus populaires</h2>
             <i class="fa-solid fa-star fa-xl"></i>
-          </header>
+          </div>
           <!-- Hotêl Le soleil du matin -->
           <div class="carte-populaire">
             <a href="#">

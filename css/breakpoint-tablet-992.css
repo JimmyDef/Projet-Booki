@@ -1,9 +1,9 @@
 /* breakpoint tablette  */
 @media screen and (max-width: 992px) {
   /* breakpoint retour à la ligne section filtres h2 */
-  section.filtres h2 {
+  .filtres h2 {
     width: 100%;
-    margin: 10px 0 20px;
+    margin: 0 0 20px;
   }
   /* breakpoint conteneur , article, aside */
   section.conteneur-hebergement-populaire {
@@ -22,7 +22,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  header.populaire {
+  .titre-populaire {
     width: 100%;
   }
   .carte-populaire {
