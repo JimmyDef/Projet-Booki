@@ -18,23 +18,31 @@
 
   aside {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /* ------ aside POPULAIRE ----- */
   .titre-populaire {
     width: 100%;
   }
   .carte-populaire {
-    width: 30%;
-    height: 130px;
+    width: 31%;
+    height: 144px;
     margin-bottom: 30px;
   }
 
+  /* ------ section ACTIVITES ------ */
   .carte-activites {
     width: 30%;
     height: 200px;
     margin-bottom: 20px;
+  }
+
+  .carte-activites img {
+    height: 150px;
   }
 
   .duo-vignette {

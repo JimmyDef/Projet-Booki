@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <!-- Librairie d'icone Font Awesome -->
     <link
       rel="stylesheet"
@@ -22,7 +23,9 @@
 
     <!-- Association feuilles de style et de 'reset'  -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/stylebis.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/breakpoint-tablet-992.css" />
     <link rel="stylesheet" href="/css/breakpoint-smartphone-768.css" />
     <title>Booki</title>
@@ -45,7 +48,7 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form action="" method="post">
+        <form action="" method="post" action>
           <label for="destination-recherche">
             <i class="fa-solid fa-location-dot fa-lg pointeur"></i>
           </label>
@@ -211,14 +214,14 @@
             </a>
           </div>
 
-          <a href="#" class="afficher-plus">Afficher plus </a>
+          <p><a href="#" class="afficher-plus">Afficher plus</a></p>
         </article>
 
         <!-- Partie Les plus populaire  -->
         <aside>
           <div class="titre-populaire">
             <h2>Les plus populaires</h2>
-            <i class="fa-solid fa-star fa-xl"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
           </div>
           <!-- Hotêl Le soleil du matin -->
           <div class="carte-populaire">
@@ -368,16 +371,29 @@
       </section>
     </main>
     <footer>
-      <h3>A propos</h3>
-      <p>Fonctionnement du site</p>
-      <p>Conditions générales de vente</p>
-      <p>Données et confidentialité</p>
-      <h3>Nos hébergements</h3>
-      <p>Charte qualité</p>
-      <p>Soumettre votre hôtel</p>
-      <h3>Assistance</h3>
-      <p>Centre d'aide</p>
-      <p>Nous contacter</p>
+      <div>
+        <h2>A propos</h2>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Nos hébergements</h2>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Proposer votre hôtel</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Assistance</h2>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

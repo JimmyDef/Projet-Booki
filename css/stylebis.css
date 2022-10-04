@@ -176,7 +176,7 @@ i.cercle {
 
 /* ----- Partie  VIGNETTES  ------- */
 
-section.conteneur-hebergement-populaire {
+.conteneur-hebergement-populaire {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -205,10 +205,7 @@ aside {
 #activites h2,
 .titre-populaire {
   width: 100%;
-  margin-bottom: 20px;
-}
-.afficher-plus {
-  width: 100%;
+  margin-bottom: 25px;
 }
 
 /* Partie héberegement + populaire + activité  */
@@ -217,14 +214,17 @@ aside {
 .carte-activites {
   padding: 5px;
   border-radius: 20px;
-  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
+  transform: scale(1);
+  transition: all 250ms;
 }
 .carte-hebergement:hover,
 .carte-populaire:hover,
 .carte-activites:hover {
+  scale: 1.07;
   -webkit-box-shadow: 1px 1px 2px 1px #000000;
   box-shadow: 1px 1px 2px 1px #000000;
 }
@@ -298,20 +298,28 @@ aside {
 }
 
 #activites h3 {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   padding-left: 19px;
-  background-color: white;
 }
 
 .carte-activites {
-  position: relative;
   overflow: hidden;
   padding: 0;
+}
+
+.carte-activites {
+  overflow: hidden;
+  padding: 0;
+}
+
+.carte-activites img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 .duo-vignette {
   display: flex;
@@ -324,24 +332,34 @@ aside {
   width: 23%;
   height: 440px;
 }
+.carte-vieux-port img,
+.carte-calanques img {
+  width: 100%;
+  height: 390px;
+}
 
 .carte-pomegues {
   height: 230px;
 }
+.carte-pomegues img {
+  height: 180px;
+}
 .carte-frioul {
   height: 150px;
+}
+.carte-frioul img {
+  height: 100px;
 }
 
 .carte-notre-dame {
   height: 190px;
 }
+.carte-notre-dame img {
+  height: 140px;
+}
 .carte-longchamp {
   height: 210px;
 }
-.carte-activites img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
+.carte-longchamp img {
+  height: 160px;
 }
