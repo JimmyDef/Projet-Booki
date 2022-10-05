@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Importation police google-font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
 
     <!-- Librairie d'icone Font Awesome -->
     <link
@@ -18,22 +17,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer">
 
     <!-- Association feuilles de style et de 'reset'  -->
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/stylebis.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/breakpoint-tablet-992.css" />
-    <link rel="stylesheet" href="/css/breakpoint-smartphone-768.css" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" >
+    <link rel="stylesheet" href="/css/style.css" >
+    <link rel="stylesheet" href="/css/header.css" >
+    <link rel="stylesheet" href="/css/footer.css" >
+    <link rel="stylesheet" href="/css/breakpoint-tablet-992.css" >
+    <link rel="stylesheet" href="/css/breakpoint-smartphone-768.css" >
+   <!-- Icone onglet navigateur  -->
+   <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
     <title>Booki</title>
+
   </head>
   <body>
     <!-- header + lien -->
     <header class="principal">
-      <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+      <img src="images/logo/Booki@3x.png" alt="Logo de Booki">
       <nav>
         <ul>
           <li><a href="#hebergement">Hébergements</a></li>
@@ -48,16 +49,11 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form action="" method="post" action>
+        <form  method="post" class="formulaire-recherche">
           <label for="destination-recherche">
             <i class="fa-solid fa-location-dot fa-lg pointeur"></i>
           </label>
-          <input
-            type="text"
-            name="destination-recherche"
-            value="Marseille, France"
-            maxlength="20"
-          />
+          <input type="search" id="destination-recherche" value="Marseille, France" maxlength="20">
           <!-- bouttons désactivés + display breakpoint -->
           <button class="smartphone" disabled="disabled" type="submit">
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -66,24 +62,30 @@
             Recherche
           </button>
         </form>
-        <div class="filtres">
+        <!-- formulaire avec input checkbox pour la selection des filtres -->
+        <form class="filtres">
           <h2>Filtres</h2>
-          <button class="btn-filtre">
+          <input type="checkbox" id="eco-btn">
+          <label for="eco-btn">
             <i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique
-          </button>
-          <button class="btn-filtre">
+        </label>
+          <input type="checkbox" id="famille-btn">
+          <label for="famille-btn">
             <i class="fa-solid fa-child-reaching fa-lg"></i>Familial
-          </button>
-          <button class="btn-filtre">
+          </label>
+          <input type="checkbox" id="romantique-btn">
+          <label for="romantique-btn">
             <i class="fa-sharp fa-solid fa-heart fa-lg"></i>Romantique
-          </button>
-          <button class="btn-filtre">
+          </label>
+          <input type="checkbox" id="animaux-btn">
+          <label for="animaux-btn">
             <i class="fa-solid fa-dog fa-lg"></i>Animaux autorisés
-          </button>
-        </div>
+          </label>
+        </form>
         <div class="icone-paragraphe-info">
           <i class="fa-solid fa-info cercle fa-sm"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        
         </div>
       </section>
 
@@ -91,15 +93,13 @@
       <section class="conteneur-hebergement-populaire">
         <!-- Partie Hébergement Marseilles -->
         <article id="hebergement">
-          <h2>Hébergements à Marseille</h2>
+          <h2><a href="#">Hébergements à Marseille</a> </h2>
 
           <!-- Auberge La Cannebière -->
           <div class="carte-hebergement">
             <a href="#">
-              <img
-                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Photo de Auberge de la Cannebière"
-              />
+              <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Photo de Auberge de la Cannebière">
               <div class="carte-hebergement__info">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <span>25€</span></p>
@@ -116,10 +116,8 @@
           <!-- Hôtel du port -->
           <div class="carte-hebergement">
             <a href="#">
-              <img
-                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                alt="Photo de Hotêl du port"
-              />
+              <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Photo de Hotêl du port">
               <div class="carte-hebergement__info">
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
@@ -136,10 +134,8 @@
           <!-- Hotêl Les Mouettes -->
           <div class="carte-hebergement">
             <a href="#">
-              <img
-                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="Photo de Hotêl Les Mouettes"
-              />
+              <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt="Photo de Hotêl Les Mouettes">
               <div class="carte-hebergement__info">
                 <h3>Hotêl Les Mouettes</h3>
                 <p>Nuit à partir de 76€</p>
@@ -156,10 +152,8 @@
           <!-- Hotêl de la mer -->
           <div class="carte-hebergement">
             <a href="#">
-              <img
-                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                alt="Photo de Hotêl de la mer"
-              />
+              <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt="Photo de Hotêl de la mer">
               <div class="carte-hebergement__info">
                 <h3>Hotêl de la mer</h3>
                 <p>Nuit à partir de 46€</p>
@@ -176,10 +170,7 @@
           <!-- Auberge Le Panier -->
           <div class="carte-hebergement">
             <a href="#">
-              <img
-                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                alt="Photo de Auberge Le Panier"
-              />
+              <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de Auberge Le Panier">
               <div class="carte-hebergement__info">
                 <h3>Auberge Le Panier</h3>
                 <p>Nuit à partir de <span>23€</span></p>
@@ -198,8 +189,7 @@
             <a href="#">
               <img
                 src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="Photo de Hotêl chez Amina"
-              />
+                alt="Photo de Hotêl chez Amina">
               <div class="carte-hebergement__info">
                 <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96€</p>
@@ -220,17 +210,15 @@
         <!-- Partie Les plus populaire  -->
         <aside>
           <div class="titre-populaire">
-            <h2>Les plus populaires</h2>
+            <h2><a href="#">Les plus populaires</a> </h2>
             <i class="fa-solid fa-star fa-lg"></i>
           </div>
           <!-- Hotêl Le soleil du matin -->
           <div class="carte-populaire">
             <a href="#">
               <div class="conteneur-populaire">
-                <img
-                  src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Photo de Hotêl Le soleil du matin"
-                />
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="Photo de Hotêl Le soleil du matin">
                 <div class="conteneur-populaire__info">
                   <h3>Hotêl Le soleil du matin</h3>
                   <p>Nuit à partir de 128€</p>
@@ -250,10 +238,8 @@
           <div class="carte-populaire">
             <a href="#">
               <div class="conteneur-populaire">
-                <img
-                  src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt="Au cœur de l'eau Chambre d'hotes"
-                />
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="Au cœur de l'eau Chambre d'hotes">
                 <div class="conteneur-populaire__info">
                   <h3>Au cœur de l'eau Chambre d'hotes</h3>
 
@@ -273,10 +259,8 @@
           <div class="carte-populaire">
             <a href="#">
               <div class="conteneur-populaire">
-                <img
-                  src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt=""
-                />
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="">
                 <div class="conteneur-populaire__info">
                   <h3>Hotêl Tout bleu et Blanc</h3>
                   <p>Nuit à partir de 68€</p>
@@ -296,14 +280,11 @@
 
       <!-- Partie activités -->
       <section id="activites">
-        <h2>Activités à Marseille</h2>
+        <h2><a href=""> Activités à Marseille</a></h2>
         <!-- Vieux Port -->
         <div class="carte-activites carte-vieux-port">
           <a href="#">
-            <img
-              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Photo de Vieux Port"
-            />
+            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo de Vieux Port">
 
             <h3>Vieux Port</h3>
           </a>
@@ -313,10 +294,8 @@
           <!-- Fort de Pomègues -->
           <div class="carte-activites carte-pomegues">
             <a href="#">
-              <img
-                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Photo de Fort de Pomègues"
-              />
+              <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Photo de Fort de Pomègues">
 
               <h3>Fort de Pomègues</h3>
             </a>
@@ -324,10 +303,8 @@
           <!-- Île du Frioul -->
           <div class="carte-activites carte-frioul">
             <a href="#">
-              <img
-                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Photo de île du Frioul"
-              />
+              <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Photo de île du Frioul">
 
               <h3>Île du Frioul</h3>
             </a>
@@ -336,10 +313,8 @@
         <!-- Parc National des Calanques -->
         <div class="carte-activites carte-calanques">
           <a href="#">
-            <img
-              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Photo de Parc National des Calanques"
-            />
+            <img  src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt="Photo de Parc National des Calanques">
 
             <h3>Parc National des Calanques</h3>
           </a>
@@ -348,10 +323,7 @@
           <!-- Notre-Dame-de-la-Garde -->
           <div class="carte-activites carte-notre-dame">
             <a href="#">
-              <img
-                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Photo de Notre-Dame-de-la-Garde"
-              />
+              <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde">
 
               <h3>Notre-Dame-de-la-Garde</h3>
             </a>
@@ -359,10 +331,8 @@
           <!-- Parc Longchamp -->
           <div class="carte-activites carte-longchamp">
             <a href="#">
-              <img
-                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Photo de Parc Longchamp"
-              />
+              <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Photo de Parc Longchamp">
 
               <h3>Parc Longchamp</h3>
             </a>

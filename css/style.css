@@ -32,6 +32,7 @@ h3 {
   font-size: 15px;
 }
 
+
 h1,
 h2,
 h3,
@@ -39,6 +40,11 @@ input,
 span,
 .afficher-plus {
   font-weight: 700;
+}
+
+h2 a:hover, a.afficher-plus:hover {
+  color: #0065fc;
+  
 }
 /* couleur des étoiles de notation */
 .carte-note i {
@@ -48,13 +54,14 @@ i.grey {
   color: grey;
 }
 
+
 /* ------ section recherche + formulaire ------*/
 
 h1 + p {
   margin-bottom: 30px;
 }
 /* champ de recherche  texte  */
-form {
+.formulaire-recherche {
   display: flex;
   max-width: 420px; /* occupe tout l'espace dispo => flex grow 1 sur input */
   height: 45px;
@@ -63,7 +70,7 @@ form {
   border-radius: 15px;
 }
 /* Label icone localisation */
-form i.pointeur {
+ i.pointeur {
   width: 50px;
   height: 100%;
   padding-top: 20px;
@@ -72,15 +79,15 @@ form i.pointeur {
   background-color: #f2f2f2;
 }
 
-input {
+input[type="search"] {
   padding-left: 10px;
   border: none;
   flex-grow: 1;
 }
-form input:focus {
+.formulaire-recherche input:focus {
   background-color: rgba(236, 161, 69, 0.26);
 }
-form button:hover {
+.formulaire-recherche button:hover {
   color: #0065fc;
   background-color: #deebff;
   -webkit-box-shadow: 1px 1px 2px 1px #000000;
@@ -116,7 +123,7 @@ button.tablette-bureau {
   align-items: center;
   flex-wrap: wrap;
 }
-.filtres button {
+.filtres label {
   display: flex;
   align-items: center;
   height: 40px;
@@ -128,7 +135,15 @@ button.tablette-bureau {
   background-color: white;
   font-weight: bold;
 }
-.filtres button:hover {
+/* section des filtres possible avec un checkbox caché */
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  box-shadow: 1px 1px 4px 1px red;
+}
+
+.filtres label:hover {
   background-color: #deebff;
   border: #deebff solid;
   border-left: none;
@@ -137,7 +152,7 @@ button.tablette-bureau {
 }
 
 /* le survol affecte aussi l'icone  */
-.filtres button:hover > i {
+.filtres label:hover > i {
   color: #deebff;
   background-color: #0065fc;
 }
@@ -145,11 +160,12 @@ button.tablette-bureau {
 .filtres h2 {
   margin-right: 30px;
 }
-.filtres button i {
+.filtres label i {
+
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  padding-top: 20px;
+  padding: 20px 8px;
   border-radius: 25px;
   color: #0065fc;
   background-color: #deebff;
@@ -176,7 +192,7 @@ i.cercle {
 
 /* ----- Partie  VIGNETTES  ------- */
 
-section.conteneur-hebergement-populaire {
+.conteneur-hebergement-populaire {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -205,10 +221,7 @@ aside {
 #activites h2,
 .titre-populaire {
   width: 100%;
-  margin-bottom: 20px;
-}
-.afficher-plus {
-  width: 100%;
+  margin-bottom: 25px;
 }
 
 /* Partie héberegement + populaire + activité  */
@@ -217,14 +230,17 @@ aside {
 .carte-activites {
   padding: 5px;
   border-radius: 20px;
-  box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
+  /* -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2); */
   background-color: white;
+  transform: scale(1);
+  transition: all 250ms;
 }
 .carte-hebergement:hover,
 .carte-populaire:hover,
 .carte-activites:hover {
+  transform : scale(1.07);
   -webkit-box-shadow: 1px 1px 2px 1px #000000;
   box-shadow: 1px 1px 2px 1px #000000;
 }
@@ -298,20 +314,28 @@ aside {
 }
 
 #activites h3 {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   padding-left: 19px;
-  background-color: white;
 }
 
 .carte-activites {
-  position: relative;
   overflow: hidden;
   padding: 0;
+}
+
+.carte-activites {
+  overflow: hidden;
+  padding: 0;
+}
+
+.carte-activites img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 .duo-vignette {
   display: flex;
@@ -324,24 +348,34 @@ aside {
   width: 23%;
   height: 440px;
 }
+.carte-vieux-port img,
+.carte-calanques img {
+  width: 100%;
+  height: 390px;
+}
 
 .carte-pomegues {
   height: 230px;
 }
+.carte-pomegues img {
+  height: 180px;
+}
 .carte-frioul {
   height: 150px;
+}
+.carte-frioul img {
+  height: 100px;
 }
 
 .carte-notre-dame {
   height: 190px;
 }
+.carte-notre-dame img {
+  height: 140px;
+}
 .carte-longchamp {
   height: 210px;
 }
-.carte-activites img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
+.carte-longchamp img {
+  height: 160px;
 }
