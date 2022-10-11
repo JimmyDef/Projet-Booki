@@ -32,7 +32,6 @@ h3 {
   font-size: 15px;
 }
 
-
 h1,
 h2,
 h3,
@@ -42,9 +41,9 @@ span,
   font-weight: 700;
 }
 
-h2 a:hover, a.afficher-plus:hover {
+h2 a:hover,
+a.afficher-plus:hover {
   color: #0065fc;
-  
 }
 /* couleur des étoiles de notation */
 .carte-note i {
@@ -53,7 +52,6 @@ h2 a:hover, a.afficher-plus:hover {
 i.grey {
   color: grey;
 }
-
 
 /* ------ section recherche + formulaire ------*/
 
@@ -70,7 +68,7 @@ h1 + p {
   border-radius: 15px;
 }
 /* Label icone localisation */
- i.pointeur {
+i.pointeur {
   width: 50px;
   height: 100%;
   padding-top: 20px;
@@ -79,8 +77,9 @@ h1 + p {
   background-color: #f2f2f2;
 }
 
-input[type="search"] {
-  padding-left: 10px;
+input[type='search'] {
+  padding: 0 10px 0px 10px;
+
   border: none;
   flex-grow: 1;
 }
@@ -136,10 +135,10 @@ button.tablette-bureau {
   font-weight: bold;
 }
 /* section des filtres possible avec un checkbox caché */
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
-input[type="checkbox"]:checked + label {
+input[type='checkbox']:checked + label {
   box-shadow: 1px 1px 4px 1px red;
 }
 
@@ -161,14 +160,16 @@ input[type="checkbox"]:checked + label {
   margin-right: 30px;
 }
 .filtres label i {
-
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  padding: 20px 8px;
+  padding: 20px 9px;
   border-radius: 25px;
   color: #0065fc;
   background-color: #deebff;
+}
+.filtres label i.fa-child-reaching {
+  padding-left: 12px;
 }
 
 .icone-paragraphe-info {
@@ -231,8 +232,8 @@ aside {
   padding: 5px;
   border-radius: 20px;
   box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
-  /* -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2); */
+  -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
   transform: scale(1);
   transition: all 250ms;
@@ -240,8 +241,9 @@ aside {
 .carte-hebergement:hover,
 .carte-populaire:hover,
 .carte-activites:hover {
-  transform : scale(1.07);
+  transform: scale(1.07);
   -webkit-box-shadow: 1px 1px 2px 1px #000000;
+  -moz-box-shadow: 1px 1px 2px 1px #000000;
   box-shadow: 1px 1px 2px 1px #000000;
 }
 
