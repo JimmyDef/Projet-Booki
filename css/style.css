@@ -4,14 +4,13 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   margin: auto;
   min-width: 350px;
   max-width: 1400px;
-  box-sizing: border-box;
   font-family: 'raleway', sans-serif;
   font-weight: 400;
 }
@@ -321,11 +320,6 @@ aside {
   display: flex;
   align-items: center;
   padding-left: 19px;
-}
-
-.carte-activites {
-  overflow: hidden;
-  padding: 0;
 }
 
 .carte-activites {
