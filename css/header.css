@@ -23,6 +23,7 @@ nav ul li {
   padding-top: 55px;
   list-style-type: none;
   text-align: center;
+  border-top: white solid 3px;
 }
 
 /* Changement des liens au survol */
