@@ -40,7 +40,7 @@
   .carte-populaire {
     flex-direction: row;
     width: 100%;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
   /* ------ aside POPULAIRE ----- */
   .conteneur-populaire__info {

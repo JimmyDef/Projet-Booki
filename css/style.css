@@ -199,9 +199,9 @@ i.cercle {
 }
 
 article {
-  width: 69%;
+  width: 66%;
   display: flex;
-  padding: 34px 38px 20px;
+  padding: 34px 24px 20px;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #f2f2f2;
@@ -209,8 +209,8 @@ article {
 }
 
 aside {
-  width: 28%;
-  padding: 34px 37px 20px;
+  width: 31.5%;
+  padding: 34px 25px 20px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -285,8 +285,8 @@ aside {
   height: 100%;
 }
 .carte-populaire img {
-  width: 45%;
-  height: 100%;
+  width: 52%;
+  /* height: 100%; */
   border-radius: 20px 0 0 20px;
   object-fit: cover;
 }
@@ -294,7 +294,7 @@ aside {
 .conteneur-populaire__info {
   position: relative;
   width: 55%;
-  padding: 4px 0 0 10px;
+  padding: 10px 0 0 10px;
   font-size: 14px;
 }
 
