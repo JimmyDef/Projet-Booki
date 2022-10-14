@@ -1,9 +1,8 @@
 /* breakpoint tablette  */
 @media screen and (max-width: 992px) {
   /* breakpoint retour à la ligne section filtres h2 */
-  .filtres h2 {
+  .formulaire-filtres h2 {
     width: 100%;
-    margin: 0 0 20px;
   }
   /* breakpoint conteneur , article, aside */
   section.conteneur-hebergement-populaire {
@@ -29,9 +28,15 @@
     width: 100%;
   }
   .carte-populaire {
-    width: 31%;
+    width: 31.5%;
     height: 144px;
     margin-bottom: 30px;
+  }
+  .carte-populaire img {
+    width: 45%;
+  }
+  .carte-populaire__info {
+    padding-top: 5px;
   }
 
   /* ------ section ACTIVITES ------ */

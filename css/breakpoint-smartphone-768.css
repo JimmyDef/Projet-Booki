@@ -43,14 +43,14 @@
     margin-bottom: 16px;
   }
   /* ------ aside POPULAIRE ----- */
-  .conteneur-populaire__info {
+  .carte-populaire__info {
     padding: 8px 20px;
   }
 
-  .conteneur-populaire__info h3 {
+  .carte-populaire__info h3 {
     padding: 3px 0;
   }
-  .conteneur-populaire__info .carte-note {
+  .carte-populaire__info .carte-note {
     bottom: 5px;
   }
 
