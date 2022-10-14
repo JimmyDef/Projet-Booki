@@ -5,7 +5,7 @@
     width: 100%;
   }
   /* breakpoint conteneur , article, aside */
-  section.conteneur-hebergement-populaire {
+  .conteneur-hebergement-populaire {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;

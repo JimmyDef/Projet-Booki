@@ -10,9 +10,13 @@
 body {
   margin: auto;
   min-width: 350px;
-  max-width: 1400px;
   font-family: 'raleway', sans-serif;
   font-weight: 400;
+}
+footer section,
+main {
+  margin: auto;
+  max-width: 1400px;
 }
 
 section {
@@ -197,7 +201,7 @@ i.cercle {
 article {
   width: 66%;
   display: flex;
-  padding: 34px 24px 20px;
+  padding: 34px 24px 10px;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #f2f2f2;
@@ -206,7 +210,7 @@ article {
 
 aside {
   width: 30%;
-  padding: 34px 24px 20px;
+  padding: 34px 24px 10px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -304,7 +308,6 @@ aside {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
-  gap: 25px;
 }
 
 #activites h2 {

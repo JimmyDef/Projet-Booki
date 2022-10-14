@@ -42,6 +42,9 @@
     width: 100%;
     margin-bottom: 16px;
   }
+  .afficher-plus {
+    margin-top: 20px;
+  }
   /* ------ aside POPULAIRE ----- */
   .carte-populaire__info {
     padding: 8px 20px;
@@ -56,7 +59,6 @@
 
   /* ------ section ACTIVITES ----- */
   #activites {
-    /* margin-top: 100px; */
     flex-direction: column;
   }
   .duo-vignette {
@@ -67,11 +69,11 @@
     width: 100%;
   }
 
-  footer {
+  .footer-section {
     padding: 30px 45px;
     flex-direction: column;
   }
-  footer > div {
+  .footer-section__item {
     width: 100%;
     margin-bottom: 40px;
   }
