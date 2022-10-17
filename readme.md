@@ -9,7 +9,7 @@ compte pour le développement du nouveau site Booki. L’ensemble de ces
 éléments ont été validés par l’équipe Produit, il est donc important de les
 respecter.
 
-_-_-_-_-_ SPECIFICATIONs FOPNCTIONNELLES _-_-_-_-_
+_-_-_-_-_ SPECIFICATIONs FONCTIONNELLES _-_-_-_-_
 
 ● Les usagers pourront rechercher des hébergements dans la ville de
 leur choix. Le champ de recherche est un champ de saisie, le texte
