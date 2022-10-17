@@ -9,10 +9,11 @@
     width: 100%;
   }
   nav li {
+    border-bottom: white solid 3px;
     padding: 30px 0 15px;
   }
   nav ul li:hover {
-    border-top: none;
+    border-top: white solid 3px;
     border-bottom: #0065fc solid 3px;
   }
   /* breakpoint switch button */
