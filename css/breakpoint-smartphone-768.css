@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   /* Breakpoint header + navigation */
   header {
-    margin: 0;
+    padding: 0;
     align-items: center;
     flex-direction: column;
   }
@@ -39,7 +39,6 @@
   }
   .carte-hebergement,
   .carte-populaire {
-    flex-direction: row;
     width: 100%;
     margin-bottom: 16px;
   }
