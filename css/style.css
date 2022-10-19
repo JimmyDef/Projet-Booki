@@ -87,9 +87,11 @@ input[type='search'] {
   border: none;
   flex-grow: 1;
 }
-.formulaire-recherche input:focus {
-  background-color: rgba(236, 161, 69, 0.26);
+input::placeholder {
+  font-weight: bold;
+  color: black;
 }
+
 .formulaire-recherche button:hover {
   color: #0065fc;
   background-color: #deebff;
